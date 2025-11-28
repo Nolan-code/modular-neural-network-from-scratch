@@ -57,6 +57,9 @@ Softmax
       ↓
 Cross-Entropy Loss
 
+## Loss curve
+![Loss Curve](Figures/loss_NN.png)
+
 
 
 
