@@ -60,6 +60,28 @@ Cross-Entropy Loss
 ## Loss curve
 ![Loss Curve](figures/loss_NN.png)
 
+## Required package
+- Numpy
+- Matplotlib
+- Pandas
+
+## What I learned
+- How to generalize the computing of gradient
+- Deepen my understanding of backpropagation
+- Implementing vectorized operations and managing matrix dimensions
+- Diagnosing overfitting, wrong learning rate(either too low or too hight) and how to solve those issues
+- Building a small but clean ML training pipeline from scratch
+- Deepen my knowledge and understanding of numpy function, python class...
+- Debuging
+- Optimizing parameters such the number of layers, the number of neurones inside each layer, the learning rate, number of iterations, impact of the activation function...
+
+## Performance
+- Validation accuracy 95.8%
+  
+## Possible improvements
+- Add dropout to prevent overfitting
+- Use mini-batch method to reduce training time on large dataset, add more activation function
+
 
 
 
