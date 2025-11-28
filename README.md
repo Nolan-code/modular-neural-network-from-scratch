@@ -13,7 +13,7 @@ The goal of this project is to demonstrate a deep understanding of:
 No deep learning library (PyTorch, TensorFlow…) was used — only NumPy.
 
 ## Key Features
-### 1. Modular Architecture
+### Modular Architecture
 You can freely define:
 - Number of layers
 - Number of neurons per layer
