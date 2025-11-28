@@ -57,30 +57,48 @@ Softmax
       ↓
 Cross-Entropy Loss
 
-## Loss curve
+## Loss Curve
 ![Loss Curve](figures/loss_NN.png)
 
-## Required package
+## Required Package
 - Numpy
 - Matplotlib
 - Pandas
 
+## Usage Example
+from src.neural_net import Neural_Net, ReLU, Sigmoid
+from utils import scale_features, split_data
+
+# Example: build a 3-layer network
+layers_dim = [16, 48, 32, 10]
+activations = [Sigmoid(), ReLU(), ReLU()]
+
+model = Neural_Net(layers_dim, activations)
+
+losses = model.train(X_train, y_train, lr=0.003, n_iters=1300)
+preds = model.predict(X_test)
+
+print("Test accuracy:", accuracy(y_test, preds))
+
+
 ## What I learned
-- How to generalize the computing of gradient
-- Deepen my understanding of backpropagation
-- Implementing vectorized operations and managing matrix dimensions
-- Diagnosing overfitting, wrong learning rate(either too low or too hight) and how to solve those issues
-- Building a small but clean ML training pipeline from scratch
-- Deepen my knowledge and understanding of numpy function, python class...
-- Debuging
-- Optimizing parameters such the number of layers, the number of neurones inside each layer, the learning rate, number of iterations, impact of the activation function...
+- How to generalize gradient computation for any number of layers
+- A much deeper understanding of backpropagation
+- Debugging vanishing gradients, exploding loss, NaN instability
+- Hyperparameter tuning (learning rate, architecture depth…)
+- Writing clean, modular, object-oriented Python
+- Handling matrix shapes and advanced NumPy operations
+- Identifying and solving training issues (learning rate too high, dead ReLUs, unstable softmax…)
 
 ## Performance
 - Validation accuracy 95.8%
   
-## Possible improvements
-- Add dropout to prevent overfitting
-- Use mini-batch method to reduce training time on large dataset, add more activation function
+## Possible Improvements
+- Add dropout for regularization
+- Implement mini-batch gradient descent
+- Add more activation functions (LeakyReLU, Tanh, GELU…)
+- Add He/Xavier initialization
+- Add plotting utilities for gradients, weights, etc.
 
 
 
