@@ -41,21 +41,21 @@ Only ReLU, Sigmoid and Softmax have been implmented but more could be easly impl
 - Prediction & accuracy evaluation
 
 ## Model Architecture (Example)
-Input (16 features)
-      ↓
-Linear (16 → 32)
-      ↓
-ReLU
-      ↓
-Linear (64 → 16)
-      ↓
-ReLU
-      ↓
-Linear (16 → 10)
-      ↓
-Softmax
-      ↓
-Cross-Entropy Loss
+- Input (16 features)
+-       ↓
+- Linear (16 → 32)
+-       ↓
+- ReLU
+-       ↓
+- Linear (64 → 16)
+-       ↓
+- ReLU
+-       ↓
+- Linear (16 → 10)
+-       ↓
+- Softmax
+-       ↓
+- Cross-Entropy Loss
 
 ## Loss Curve
 ![Loss Curve](figures/loss_NN.png)
