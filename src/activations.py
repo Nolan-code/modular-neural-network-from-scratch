@@ -1,5 +1,5 @@
 import numpy as np
-
+# Compute the forward and backward propagation for every actvations functions (except for the softmax function which is only used as the activation function of the last layer)
 class ReLU:
     def Forward_prop(self, Z): 
       self.Z = Z
@@ -21,4 +21,5 @@ class Sigmoid:
 class Softmax:
     def Forward_prop(self, Z): 
         exp = np.exp(Z - np.max(Z, axis=1, keepdims=True))
+
         return exp / np.sum(exp, axis=1, keepdims=True)
