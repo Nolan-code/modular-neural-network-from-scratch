@@ -35,7 +35,7 @@ Only ReLU, Sigmoid and Softmax have been implmented but more could be easly impl
 ### Training Pipeline
 - Dataset preprocessing
 - Feature scaling
-- Train/validation/test split
+- Train/validation split
 - Gradient descent optimizer
 - Loss tracking
 - Prediction & accuracy evaluation
